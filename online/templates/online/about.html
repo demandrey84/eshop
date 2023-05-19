@@ -1,0 +1,34 @@
+{% extends 'online/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'online/images/banner/about_banner.jpg' %}" class="d-block w-100" alt="banner image">
+    </div>
+
+    </div>
+  </div>
+</div>
+{% endblock banner-slider%}
+{% block main-content %}
+    <div class="container mt-3">
+        <br>
+        <div class = "row">
+            <div class = "col-md-12">
+                <h1 class = "text-center">About</h1>
+                <hr>
+                <p class = "fs-4 text-center">The Dermaskill cosmetic brand was founded by a team of ambitious dermatologists from the United States who were able to integrate the most advanced medical and technological expertise based on long-term knowledge of cosmetics production.</p>
+                <p class = "fs-4 text-center">Our specialists created multifunctional and highly effective products that work at all skin levels and are effective for all types of skin.
+
+                  Doctors and technologists of the Dermaskill brand have set themselves the goal of making all their products not only effective but also affordable.
+                  
+                  Today Dermaskill products are used by customers all over the world.</p>
+            </div>
+        </div>
+
+    </div>
+{% endblock main-content %}
+```
